@@ -1,0 +1,36 @@
+.nav-enlace{
+    background-color: #402F3F;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+.enlaces{
+    color: white;
+    // padding: 10px;
+}
+.enlaces2{
+    color: gainsboro;
+    padding: 10px;
+    text-decoration: none;
+
+}
+img{
+    width: 30px;
+}
+.container-enlaces{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: ;
+    height: 50px;
+}
+.register-login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h2{
+    color: white;
+    font-weight: bold;
+}

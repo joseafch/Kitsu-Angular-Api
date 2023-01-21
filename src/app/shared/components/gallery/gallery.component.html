@@ -1,0 +1,36 @@
+
+<div class="div-card-anime" *ngFor="let items of list">
+<div class="div-img">
+    <img  src="{{items.attributes.posterImage.original}}" alt="{{items.attributes.canonicalTitle}}">
+</div>
+<h3 class="title">{{items.attributes.canonicalTitle}}</h3>
+</div>
+
+<div class="div-card-anime" *ngFor="let populateAnime of populate">
+    <div class="div-img">
+        <img  src="{{populateAnime.attributes.posterImage.original}}" alt="{{populateAnime.attributes.canonicalTitle}}">
+    </div>
+    <h3 class="title">{{populateAnime.attributes.canonicalTitle}}</h3>
+    </div>
+
+    <div class="div-card-anime" *ngFor="let awaitedAnime of awaited ">
+        <div class="div-img">
+            <img  src="{{awaitedAnime.attributes.posterImage.original}}" alt="{{awaitedAnime.attributes.canonicalTitle}}">
+        </div>
+        <h3 class="title">{{awaitedAnime.attributes.canonicalTitle}}</h3>
+        </div>
+
+
+<div class="div-card-anime" *ngFor="let pointsAnimes of points">
+        <div class="div-img">
+            <img  src="{{pointsAnimes.attributes.posterImage.original}}" alt="{{pointsAnimes.attributes.canonicalTitle}}">
+        </div>
+        <h3 class="title">{{pointsAnimes.attributes.canonicalTitle}}</h3>
+        </div>
+
+<div class="div-card-anime" *ngFor="let mostPopularAnimes of mostPopular">
+            <div class="div-img">
+                <img  src="{{mostPopularAnimes.attributes.posterImage.original}}" alt="{{mostPopularAnimes.attributes.canonicalTitle}}">
+            </div>
+            <h3 class="title">{{mostPopularAnimes.attributes.canonicalTitle}}</h3>
+            </div>

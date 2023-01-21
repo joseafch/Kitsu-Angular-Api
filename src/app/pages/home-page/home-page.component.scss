@@ -1,0 +1,19 @@
+.divAnimeSemana{
+    // width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    // flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 50px;
+}
+.colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    width: 100%;
+}
+.div-title{
+    margin-left: 50px;
+}
