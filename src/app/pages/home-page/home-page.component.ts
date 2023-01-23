@@ -13,7 +13,7 @@ animesPopulate:any
 animesAwaited: any
 animesPoints: any
 mostPopular: any
- ngOnInit() {//se ejecutara cuando se llame al html
+ ngOnInit() {//se ejecutara cuando se llame al html se utiliza para poder llamar informacion
    this.animesService.getAnimes().subscribe((res: any)=>{ // el subscribe se usa pa llamar a la promesa para obtener los datos como un .then
     this.animes= res.data // data es donde esta almacenado los archivos de la api *hay q investigar y leer la api para saber como sacar los datos necesarios
     console.log('semana',res.data)})

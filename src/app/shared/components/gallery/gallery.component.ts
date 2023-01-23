@@ -8,9 +8,5 @@ import { Component, Input } from '@angular/core';
 export class GalleryComponent {
  
   @Input() list?: any []
-  @Input() populate?: any[]
-  @Input() awaited?: any[]
-  @Input() points?: any[]
-  @Input() mostPopular?: any[]
 
 }
