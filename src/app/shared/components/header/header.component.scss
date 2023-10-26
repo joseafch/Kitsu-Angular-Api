@@ -10,10 +10,12 @@
     // padding: 10px;
 }
 .enlaces2{
-    color: gainsboro;
+    color:#999985 ;
     padding: 10px;
     text-decoration: none;
-
+.enlaces :checked{
+color: white;
+}
 }
 img{
     width: 30px;
@@ -33,4 +35,11 @@ img{
 h2{
     color: white;
     font-weight: bold;
+}
+.search{
+    background-color:#332532 ;
+    color: #999985;
+}
+.tittle-page{
+    margin-right: 10px;
 }

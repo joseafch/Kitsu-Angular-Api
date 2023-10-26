@@ -9,19 +9,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HttpClientModule } from '@angular/common/http'; //hay que importarlo a mano ya q casi nunca lo hace solo
+import { FormsModule } from '@angular/forms'; 
+
+import {SliderModule} from 'primeng/slider';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     AnimePageComponent,
     HeaderComponent,
-    GalleryComponent
-
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule // esto es lo que te permitara hacer importaciones
+    HttpClientModule,
+    FormsModule, // esto es lo que te permitara hacer importaciones
+    SliderModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

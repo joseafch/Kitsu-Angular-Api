@@ -1,1 +1,43 @@
-<p>anime-page works!</p>
+<!-- <input type="range" min="1970" max="2022" value="2022" [(ngModel)]="animeAge" > -->
+<div class="div-padre">
+    <div *ngIf="avancedMenu" class="slice-menu">
+        <div class="close-option">
+        <button class="close-option-button" (click)="closeOption()">X</button></div>
+        <div class="slice-menu-box">
+        <h5>Año:{{animeAge[0] + '---' + animeAge[1] }}</h5>
+        <p-slider [(ngModel)]="animeAge" [min]="1910" [max]="2023" [range]="true"></p-slider>
+        <button (click)="filtrarAge(animeAge)">Buscar</button>
+
+        <h5>Puntuaje promedio : {{animepuntuaje[0]+'%'+'----'+animepuntuaje[1]+'%'}}</h5>
+        <p-slider [(ngModel)]="animepuntuaje" [min]="0" [max]="100" [range]="true"></p-slider>
+        <button (click)="filtrarAge(animeAge)">Buscar</button>
+
+        <h5>Episodios: {{animecapitulos[0]+'----'+animecapitulos[1]}}</h5>
+        <p-slider [(ngModel)]="animecapitulos" [min]="1" [max]="2000" [range]="true"></p-slider>
+        <button (click)="filtrarAge(animeAge)">Buscar</button>
+        
+    </div>
+    <div class="slice-menu-box">
+        <h3>Clasificacion</h3>
+        <div class="clasification-tipos">
+            <h4 class="clasification-buton">ALL</h4>
+            <h4 class="clasification-buton">G</h4>
+            <h4 class="clasification-buton">PG</h4>
+            <h4 class="clasification-buton">R</h4>
+            <h4 class="clasification-buton">R18</h4>
+        </div>
+    </div>
+</div>
+    <div class="animes-pages-defaul">
+        <div class="search-animes">
+            <input  class="search-animes_input" type="text" [(ngModel)]="animeName" placeholder="Busca aqui tu anime...">
+            <button (click)="filtrarName(animeName)">Buscar</button>
+            
+        </div>
+        <a class="search-more" routerLink="/animes"  (click)="moreOption()">Busqueda avanzada</a>
+    <!-- <a class="enlaces2" routerLink="/animes">animes</a> -->
+
+
+        <app-gallery class="divAnimeSemana" [list]="allAnimes"></app-gallery>
+    </div>
+</div>
